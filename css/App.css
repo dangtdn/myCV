@@ -1,0 +1,304 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #40d5a8;
+}
+
+.App {
+  width: 100%;
+  min-height: 1300px;
+  background: #16171a;
+}
+
+.App .header {
+  width: 100%;
+  min-height: 30rem;
+  background: #212226;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.App .header .images {
+  position: relative;
+}
+
+.App .header .images .image {
+  height: 575px;
+}
+
+.App .header .images .image img {
+  height: 500px;
+  border-radius: 0px 0px 25px 25px;
+}
+
+.App .header .images .avatar-image {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 10px solid #212226;
+  overflow: hidden;
+}
+
+.App .header .images .avatar-image img {
+  width: 100%;
+  height: auto;
+}
+
+.App .header .texts {
+  border-bottom: 0.2px solid #615d5d;
+}
+
+.App .header .texts .name {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.App .header .texts .intro {
+  color: #cecece;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.App .navbar {
+  background: #212226;
+}
+
+.App .navbar .navbar-nav .nav-item {
+  position: relative;
+}
+
+.App .navbar .navbar-nav .nav-item .nav-link span {
+  font-size: 20px;
+  font-weight: 300;
+  padding: 5px 20px;
+}
+
+.App .navbar .navbar-nav .nav-item .nav-link.active {
+  color: #40d5a8;
+  border-bottom: 5px solid #40d5a8;
+}
+
+.App .about-me-page .container {
+  padding: 20px 50px;
+}
+
+.App .about-me-page .container h4 span {
+  font-weight: 600;
+  padding: 12px 20px;
+  border-bottom: 5px solid #fff;
+}
+
+.App .about-me-page .container .info-content, .App .about-me-page .container .contact-content {
+  width: 100%;
+  background: #212226;
+  min-height: 300px;
+  border-radius: 15px;
+  margin-top: 35px;
+}
+
+.App .about-me-page .container .info-content .content-box, .App .about-me-page .container .contact-content .content-box {
+  font-size: 17px;
+  font-weight: 400;
+  color: #cecece;
+  letter-spacing: 0.8px;
+}
+
+.App .about-me-page .container .info-content .content-box span, .App .about-me-page .container .contact-content .content-box span {
+  padding: 0px 10px;
+  font-size: 17px;
+}
+
+.App .about-me-page .container .info-content .content-box span i, .App .about-me-page .container .contact-content .content-box span i {
+  font-size: 23px;
+}
+
+.App .my-skills-page .container {
+  padding: 20px 50px;
+}
+
+.App .my-skills-page .container h4 {
+  text-align: center;
+}
+
+.App .my-skills-page .container h4 span {
+  font-weight: 600;
+  padding: 12px 20px;
+  border-bottom: 5px solid #fff;
+}
+
+.App .my-skills-page .container .info-content {
+  width: 100%;
+  background: #212226;
+  min-height: 300px;
+  border-radius: 15px;
+  margin-top: 35px;
+}
+
+.App .my-skills-page .container .info-content .content-box {
+  font-size: 17px;
+  font-weight: 400;
+  color: #cecece;
+  letter-spacing: 0.8px;
+}
+
+.App .my-skills-page .container .info-content .content-box h5 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.App .my-skills-page .container .info-content .content-box ul {
+  padding-left: 15px;
+}
+
+.App .experience-page .container {
+  padding: 20px 50px;
+}
+
+.App .experience-page .container h4 {
+  text-align: center;
+}
+
+.App .experience-page .container h4 span {
+  font-weight: 600;
+  padding: 12px 20px;
+  border-bottom: 5px solid #fff;
+}
+
+.App .experience-page .container .info-content {
+  position: relative;
+  width: 100%;
+  background: #212226;
+  min-height: 100px;
+  border-radius: 15px;
+  margin-top: 35px;
+}
+
+.App .experience-page .container .info-content .date-box {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: 70px;
+  left: -65px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background: #212226;
+  border: 10px solid #16171a;
+}
+
+.App .experience-page .container .info-content .content-box {
+  font-size: 17px;
+  font-weight: 400;
+  color: #cecece;
+  letter-spacing: 0.8px;
+  padding: 20px 20px 10px 80px;
+}
+
+.App .experience-page .container .info-content .content-box h5 {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.App .experience-page .container .info-content .content-box ul {
+  padding-left: 15px;
+}
+
+.App .education-page .container {
+  padding: 20px 50px;
+}
+
+.App .education-page .container h4 {
+  text-align: center;
+}
+
+.App .education-page .container h4 span {
+  font-weight: 600;
+  padding: 12px 20px;
+  border-bottom: 5px solid #fff;
+}
+
+.App .education-page .container .info-content {
+  position: relative;
+  width: 100%;
+  background: #212226;
+  min-height: 100px;
+  border-radius: 15px;
+  margin-top: 35px;
+}
+
+.App .education-page .container .info-content .education-box {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  top: -60px;
+  left: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background: #212226;
+  border: 10px solid #16171a;
+}
+
+.App .education-page .container .info-content .education-box span {
+  color: #615d5d;
+  font-size: 50px;
+}
+
+.App .education-page .container .info-content .content-box {
+  font-size: 17px;
+  font-weight: 400;
+  color: #cecece;
+  letter-spacing: 0.8px;
+  padding: 80px 30px 10px 30px;
+  margin-top: 100px;
+}
+
+.App .education-page .container .info-content .content-box p {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.App .education-page .container .info-content .content-box .status {
+  color: #615d5d;
+  font-size: 16px;
+  font-weight: 400;
+}
+/*# sourceMappingURL=App.css.map */
