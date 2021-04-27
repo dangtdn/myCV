@@ -4,20 +4,61 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+html {
+    scroll-behavior: smooth;
+}
+// Create theme
+// colors background
+    $bgPrimary: #16171a;
+    $bgSecondary: #212226;
+    $bgGreen: #40d5a8;
+    $bgDownload: #474a56;
+    $bgDownloadHover: #808496;
+// colors text
+    $textPrimary:#cecece; 
+    $textSecondary: #fff;
+    $textGreen: #40d5a8;
+    $textGrayLight: #615d5d;
+// colors border
+    $bdPrimary: #fff;
+    $bdSecondary:#40d5a8;
+    $bdDarkLight: #212226;
+    $bdDark: #16171a;
+// font size basic
+    $body: 12px;
+    $subtitle: 15px;
+    $h6: 16px;
+    $h5: 17px;
+    $h4: 20px;
+    $h3: 23px;
+    $h2: 24px;
+    $h1: 32px;
+// font weight basic
+    $fwBlack: 900;
+    $fwBold: 700;
+    $fwMedium: 600;
+    $fwRegular: 500;
+    $fwExtraLight: 400;
+    $fwLight: 300;
+// responsive basic
+    $extraLarge: 1200px;
+    $large: 992px;
+    $medium: 768px;
+    $small: 576px;
 
 a {
   text-decoration: none;
-  color: #40d5a8;
+  color: $textGreen;
 }
 
 .App {
   width: 100%;
   min-height: 1300px;
-  background: #16171a;
+  background: $bgPrimary;
   .header {
     width: 100%;
     min-height: 30rem;
-    background: #212226;
+    background: $bgSecondary;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,7 +81,7 @@ a {
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        border: 10px solid #212226;
+        border: 10px solid $bdDark;
         overflow: hidden;
 
         img {
@@ -54,37 +95,102 @@ a {
       border-bottom: 0.2px solid #615d5d;
       
       .name {
-        font-size: 32px;
-        font-weight: 600;
+        font-size: $h1;
+        font-weight: $fwMedium;
       }
       .intro {
-        color: #cecece;
-        font-size: 17px;
-        font-weight: 400;
+        color: $textPrimary;
+        font-size: $h5;
+        font-weight: $fwExtraLight;
       }
     }
   }
 
   .navbar {
-    background: #212226;
+    background: $bgSecondary;
 
     .navbar-nav {
 
       .nav-item {
         position: relative;
+        margin-bottom: 10px;
 
         .nav-link {
+          padding: 10px 20px;
 
-          span{
-            font-size: 20px;
-            font-weight: 300;
-            padding: 5px 20px;
+          span {
+            padding: 10px;
+            font-size: $h4;
+            font-weight: $fwLight;
+            transition: all 0.3s linear;
+
+            &:hover {
+              background: $bgDownload;
+              border-radius: 7px;
+            }
+          }
+
+          .download-profile-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+              width: 25px;
+              height: 25px;
+            }
+
+            p {
+              margin-bottom: 0;
+              margin-left: 10px;
+              font-size: $h4;
+              font-weight: $fwLight;
+            }
           }
         }
 
         .nav-link.active {
-          color: #40d5a8;
-          border-bottom: 5px solid #40d5a8;
+          position: relative;
+          color: $textGreen;
+          // border-bottom: 5px solid $textGreen;
+
+          span {
+
+            &:hover {
+              background: none;
+            }
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 5px;
+            bottom: -10px;
+            left: 0px;
+            background: $bgGreen;
+            transition: all 0.5s linear;
+          }
+        }
+      }
+
+      .nav-item.download {
+        margin-left: 20px;
+
+        .nav-link {
+          color: $textSecondary !important;
+          padding: 0px;
+
+          .download-profile-btn {
+            padding: 10px 20px;
+            background: $bgDownload;
+            border-radius: 7px;
+            transition: all 0.3s linear;
+
+            &:hover {
+              background: $bgDownloadHover;
+            }
+          }
         }
       }
     }
@@ -96,7 +202,7 @@ a {
         padding: 20px 50px;
         h4 {
           span {
-            font-weight: 600;
+            font-weight: $fwMedium;
             padding: 12px 20px;
             border-bottom: 5px solid #fff;
           }
@@ -104,23 +210,23 @@ a {
   
         .info-content, .contact-content {
           width: 100%;
-          background: #212226;
+          background: $bgSecondary;
           min-height: 300px;
           border-radius: 15px;
           margin-top: 35px;
   
           .content-box {
-              font-size: 17px;
-              font-weight: 400;
-              color: #cecece;
+              font-size: $h5;
+              font-weight: $fwExtraLight;
+              color: $textPrimary;
               letter-spacing: 0.8px;
 
               span {
                 padding: 0px 10px;
-                font-size: 17px;
+                font-size: $h5;
 
                 i {
-                  font-size: 23px;
+                  font-size: $h3;
                 }
               }
           }
@@ -135,7 +241,7 @@ a {
       h4 {
         text-align: center;
         span {
-          font-weight: 600;
+          font-weight: $fwMedium;
           padding: 12px 20px;
           border-bottom: 5px solid #fff;
         }
@@ -143,21 +249,21 @@ a {
 
       .info-content {
         width: 100%;
-        background: #212226;
+        background: $bgSecondary;
         min-height: 300px;
         border-radius: 15px;
         margin-top: 35px;
 
         .content-box {
-            font-size: 17px;
-            font-weight: 400;
-            color: #cecece;
+            font-size: $h5;
+            font-weight: $fwExtraLight;
+            color: $textPrimary;
             letter-spacing: 0.8px;
 
             h5 {
               color: #fff;
-              font-size: 16px;
-              font-weight: 600;
+              font-size: $h6;
+              font-weight: $fwMedium;
             }
 
             ul {
@@ -176,7 +282,7 @@ a {
       h4 {
         text-align: center;
         span {
-          font-weight: 600;
+          font-weight: $fwMedium;
           padding: 12px 20px;
           border-bottom: 5px solid #fff;
         }
@@ -205,16 +311,16 @@ a {
         }
 
         .content-box {
-            font-size: 17px;
-            font-weight: 400;
-            color: #cecece;
+            font-size: $h5;
+            font-weight: $fwExtraLight;
+            color: $textPrimary;
             letter-spacing: 0.8px;
             padding: 20px 20px 10px 80px;
 
             h5 {
               color: #fff;
-              font-size: 16px;
-              font-weight: 600;
+              font-size: $h6;
+              font-weight: $fwMedium;
             }
 
             ul {
@@ -233,16 +339,16 @@ a {
       h4 {
         text-align: center;
         span {
-          font-weight: 600;
+          font-weight: $fwMedium;
           padding: 12px 20px;
-          border-bottom: 5px solid #fff;
+          border-bottom: 5px solid $bdPrimary;
         }
       }
 
       .info-content {
         position: relative;
         width: 100%;
-        background: #212226;
+        background: $bgSecondary;
         min-height: 100px;
         border-radius: 15px;
         margin-top: 35px;
@@ -257,33 +363,33 @@ a {
           justify-content: center;
           align-items: center;
           border-radius: 50%;
-          background: #212226;
-          border: 10px solid #16171a;
+          background: $bgSecondary;
+          border: 10px solid $bdDark;
 
           span {
-            color: #615d5d;
+            color: $textGrayLight;
             font-size: 50px;
           }
         }
 
         .content-box {
-            font-size: 17px;
-            font-weight: 400;
-            color: #cecece;
+            font-size: $h5;
+            font-weight: $fwExtraLight;
+            color: $textPrimary;
             letter-spacing: 0.8px;
             padding: 80px 30px 10px 30px;
             margin-top: 100px;
 
             p {
-              color: #fff;
-              font-size: 20px;
-              font-weight: 500;
+              color: $textSecondary;
+              font-size: $h4;
+              font-weight: $fwRegular;
             }
 
             .status {
-              color: #615d5d;
-              font-size: 16px;
-              font-weight: 400;
+              color: $textGrayLight;
+              font-size: $h6;
+              font-weight: $fwExtraLight;
             }
         }
       }

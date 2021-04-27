@@ -6,6 +6,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
   color: #40d5a8;
@@ -56,7 +60,7 @@ a {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 10px solid #212226;
+  border: 10px solid #16171a;
   overflow: hidden;
 }
 
@@ -86,17 +90,90 @@ a {
 
 .App .navbar .navbar-nav .nav-item {
   position: relative;
+  margin-bottom: 10px;
+}
+
+.App .navbar .navbar-nav .nav-item .nav-link {
+  padding: 10px 20px;
 }
 
 .App .navbar .navbar-nav .nav-item .nav-link span {
+  padding: 10px;
   font-size: 20px;
   font-weight: 300;
-  padding: 5px 20px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.App .navbar .navbar-nav .nav-item .nav-link span:hover {
+  background: #474a56;
+  border-radius: 7px;
+}
+
+.App .navbar .navbar-nav .nav-item .nav-link .download-profile-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.App .navbar .navbar-nav .nav-item .nav-link .download-profile-btn img {
+  width: 25px;
+  height: 25px;
+}
+
+.App .navbar .navbar-nav .nav-item .nav-link .download-profile-btn p {
+  margin-bottom: 0;
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 .App .navbar .navbar-nav .nav-item .nav-link.active {
+  position: relative;
   color: #40d5a8;
-  border-bottom: 5px solid #40d5a8;
+}
+
+.App .navbar .navbar-nav .nav-item .nav-link.active span:hover {
+  background: none;
+}
+
+.App .navbar .navbar-nav .nav-item .nav-link.active::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  bottom: -10px;
+  left: 0px;
+  background: #40d5a8;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.App .navbar .navbar-nav .nav-item.download {
+  margin-left: 20px;
+}
+
+.App .navbar .navbar-nav .nav-item.download .nav-link {
+  color: #fff !important;
+  padding: 0px;
+}
+
+.App .navbar .navbar-nav .nav-item.download .nav-link .download-profile-btn {
+  padding: 10px 20px;
+  background: #474a56;
+  border-radius: 7px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+
+.App .navbar .navbar-nav .nav-item.download .nav-link .download-profile-btn:hover {
+  background: #808496;
 }
 
 .App .about-me-page .container {
