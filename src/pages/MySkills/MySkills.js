@@ -2,11 +2,11 @@ import React from 'react'
 
 export default function MySkills() {
     return (
-        <div className="my-skills-page text-white pt-5">
+        <div className="my-skills-page text-white py-5">
             <div className="container mx-auto">
                 <h4><span>MY SKILLS</span></h4>
                 <div className="row">
-                    <div className="col-4">
+                    <div className="col-lg-4">
                         <div className="info-content">
                             <div className="content-box p-4">
                                 <h5>PROGRAMMING LANGUAGES</h5>
@@ -17,12 +17,13 @@ export default function MySkills() {
                                 <h5>FRAMEWORKS</h5>
                                 <ul>
                                     <li>ReactJS</li>
-                                    <li>Angular</li>
+                                    <li>Boostrap</li>
+                                    <li>Angular basic</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div className="col-4">
+                    <div className="col-lg-4">
                         <div className="info-content">
                             <div className="content-box p-4">
                                 <h5>VERSION CONTROL</h5>
@@ -38,7 +39,7 @@ export default function MySkills() {
                             </div>
                         </div>
                     </div>
-                    <div className="col-4">
+                    <div className="col-lg-4">
                         <div className="info-content">
                             <div className="content-box p-4">
                                 <h5>ENGLISH SKILL</h5>

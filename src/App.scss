@@ -77,7 +77,8 @@ a {
       .avatar-image {
         position: absolute;
         bottom: 0;
-        left: 40%;
+        left: 50%;
+        transform: translateX(-50%);
         width: 200px;
         height: 200px;
         border-radius: 50%;
@@ -109,11 +110,23 @@ a {
   .navbar {
     background: $bgSecondary;
 
+    .navbar-toggler {
+      width: 50px !important;
+      height: 50px !important;
+      border-color: $bdSecondary !important;
+      outline: $bdSecondary;
+
+      span {
+        color: $textGreen !important;
+        font-size: $h3 !important;
+      }
+    }
+
     .navbar-nav {
 
       .nav-item {
         position: relative;
-        margin-bottom: 10px;
+        margin: 10px 0px;
 
         .nav-link {
           padding: 10px 20px;
@@ -122,11 +135,11 @@ a {
             padding: 10px;
             font-size: $h4;
             font-weight: $fwLight;
+            border-radius: 7px;
             transition: all 0.3s linear;
 
             &:hover {
               background: $bgDownload;
-              border-radius: 7px;
             }
           }
 
@@ -175,7 +188,6 @@ a {
       }
 
       .nav-item.download {
-        margin-left: 20px;
 
         .nav-link {
           color: $textSecondary !important;
@@ -319,8 +331,23 @@ a {
 
             h5 {
               color: #fff;
-              font-size: $h6;
+              font-size: $h4;
               font-weight: $fwMedium;
+            }
+
+            p {
+
+              span {
+                font-size: $h5;
+                font-weight: $fwMedium;
+                color: $textSecondary;
+              }
+
+              .link-git {
+                font-size: $h5;
+                color: $textGreen;
+                font-weight: $fwExtraLight;
+              }
             }
 
             ul {
@@ -357,8 +384,9 @@ a {
           position: absolute;
           width: 120px;
           height: 120px;
-          top: -60px;
-          left: 40%;
+          top: -32%;
+          left: 50%;
+          transform: translateX(-50%);
           display: flex;
           justify-content: center;
           align-items: center;
@@ -389,11 +417,36 @@ a {
             .status {
               color: $textGrayLight;
               font-size: $h6;
-              font-weight: $fwExtraLight;
+              font-weight: $fwRegular;
             }
         }
       }
     }
 
   }
+}
+// responsive basic
+// $extraLarge: 1200px;
+// $large: 992px;
+// $medium: 768px;
+// $small: 576px;
+
+@media (max-width: $extraLarge) {
+  
+}
+
+@media (max-width: $large) {
+  .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: $medium) {
+
+}
+
+@media (max-width: $small) {
+
 }

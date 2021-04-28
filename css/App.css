@@ -56,7 +56,9 @@ a {
 .App .header .images .avatar-image {
   position: absolute;
   bottom: 0;
-  left: 40%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -88,9 +90,21 @@ a {
   background: #212226;
 }
 
+.App .navbar .navbar-toggler {
+  width: 50px !important;
+  height: 50px !important;
+  border-color: #40d5a8 !important;
+  outline: #40d5a8;
+}
+
+.App .navbar .navbar-toggler span {
+  color: #40d5a8 !important;
+  font-size: 23px !important;
+}
+
 .App .navbar .navbar-nav .nav-item {
   position: relative;
-  margin-bottom: 10px;
+  margin: 10px 0px;
 }
 
 .App .navbar .navbar-nav .nav-item .nav-link {
@@ -101,13 +115,13 @@ a {
   padding: 10px;
   font-size: 20px;
   font-weight: 300;
+  border-radius: 7px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
 .App .navbar .navbar-nav .nav-item .nav-link span:hover {
   background: #474a56;
-  border-radius: 7px;
 }
 
 .App .navbar .navbar-nav .nav-item .nav-link .download-profile-btn {
@@ -153,10 +167,6 @@ a {
   background: #40d5a8;
   -webkit-transition: all 0.5s linear;
   transition: all 0.5s linear;
-}
-
-.App .navbar .navbar-nav .nav-item.download {
-  margin-left: 20px;
 }
 
 .App .navbar .navbar-nav .nav-item.download .nav-link {
@@ -302,8 +312,20 @@ a {
 
 .App .experience-page .container .info-content .content-box h5 {
   color: #fff;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
+}
+
+.App .experience-page .container .info-content .content-box p span {
+  font-size: 17px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.App .experience-page .container .info-content .content-box p .link-git {
+  font-size: 17px;
+  color: #40d5a8;
+  font-weight: 400;
 }
 
 .App .experience-page .container .info-content .content-box ul {
@@ -337,8 +359,10 @@ a {
   position: absolute;
   width: 120px;
   height: 120px;
-  top: -60px;
-  left: 40%;
+  top: -32%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,6 +400,20 @@ a {
 .App .education-page .container .info-content .content-box .status {
   color: #615d5d;
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 500;
+}
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 /*# sourceMappingURL=App.css.map */

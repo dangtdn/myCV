@@ -18,7 +18,7 @@ export default function HeaderIntro() {
                 </div>
                 <div className="texts text-center text-white mt-3 pb-4">
                     <div className="name">Nguyen Nhat Dang</div>
-                    <div className="intro p-2">- A Front End Web Developer -</div>
+                    <div className="intro p-2">- I'm a Front-end Developer -</div>
                 </div>
             </div>
         </div>
