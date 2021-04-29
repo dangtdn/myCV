@@ -91,15 +91,25 @@ a {
 }
 
 .App .navbar .navbar-toggler {
-  width: 50px !important;
-  height: 50px !important;
+  width: 60px !important;
+  height: 32px !important;
   border-color: #40d5a8 !important;
   outline: #40d5a8;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .App .navbar .navbar-toggler span {
   color: #40d5a8 !important;
   font-size: 23px !important;
+}
+
+.App .navbar .navbar-toggler:hover {
+  background: #40d5a8;
+}
+
+.App .navbar .navbar-toggler:hover span {
+  color: #16171a !important;
 }
 
 .App .navbar .navbar-nav .nav-item {
@@ -202,6 +212,9 @@ a {
   min-height: 300px;
   border-radius: 15px;
   margin-top: 35px;
+  border: 1px solid #212226;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .App .about-me-page .container .info-content .content-box, .App .about-me-page .container .contact-content .content-box {
@@ -218,6 +231,10 @@ a {
 
 .App .about-me-page .container .info-content .content-box span i, .App .about-me-page .container .contact-content .content-box span i {
   font-size: 23px;
+}
+
+.App .about-me-page .container .info-content:hover, .App .about-me-page .container .contact-content:hover {
+  border: 1px solid #40d5a8;
 }
 
 .App .my-skills-page .container {
@@ -240,6 +257,9 @@ a {
   min-height: 300px;
   border-radius: 15px;
   margin-top: 35px;
+  border: 1px solid #212226;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .App .my-skills-page .container .info-content .content-box {
@@ -257,6 +277,10 @@ a {
 
 .App .my-skills-page .container .info-content .content-box ul {
   padding-left: 15px;
+}
+
+.App .my-skills-page .container .info-content:hover {
+  border: 1px solid #40d5a8;
 }
 
 .App .experience-page .container {
@@ -280,6 +304,9 @@ a {
   min-height: 100px;
   border-radius: 15px;
   margin-top: 35px;
+  border: 1px solid #212226;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .App .experience-page .container .info-content .date-box {
@@ -300,6 +327,8 @@ a {
   border-radius: 50%;
   background: #212226;
   border: 10px solid #16171a;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .App .experience-page .container .info-content .content-box {
@@ -330,6 +359,14 @@ a {
 
 .App .experience-page .container .info-content .content-box ul {
   padding-left: 15px;
+}
+
+.App .experience-page .container .info-content:hover {
+  border: 1px solid #40d5a8;
+}
+
+.App .experience-page .container .info-content:hover .date-box {
+  border: 10px solid #40d5a8;
 }
 
 .App .education-page .container {
@@ -375,6 +412,8 @@ a {
   border-radius: 50%;
   background: #212226;
   border: 10px solid #16171a;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .App .education-page .container .info-content .education-box span {
@@ -389,6 +428,9 @@ a {
   letter-spacing: 0.8px;
   padding: 80px 30px 10px 30px;
   margin-top: 100px;
+  border: 1px solid #212226;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
 }
 
 .App .education-page .container .info-content .content-box p {
@@ -401,6 +443,14 @@ a {
   color: #615d5d;
   font-size: 16px;
   font-weight: 500;
+}
+
+.App .education-page .container .info-content .content-box:hover {
+  border: 1px solid #40d5a8;
+}
+
+.App .education-page .container .info-content:hover .education-box {
+  border: 10px solid #40d5a8;
 }
 
 @media (max-width: 992px) {

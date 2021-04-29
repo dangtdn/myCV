@@ -111,14 +111,23 @@ a {
     background: $bgSecondary;
 
     .navbar-toggler {
-      width: 50px !important;
-      height: 50px !important;
+      width: 60px !important;
+      height: 32px !important;
       border-color: $bdSecondary !important;
       outline: $bdSecondary;
+      transition: all 0.5s linear;
 
       span {
         color: $textGreen !important;
         font-size: $h3 !important;
+      }
+
+      &:hover {
+        background: $bgGreen;
+        
+        span {
+          color: $bdDark !important;
+        }
       }
     }
 
@@ -226,6 +235,8 @@ a {
           min-height: 300px;
           border-radius: 15px;
           margin-top: 35px;
+          border: 1px solid $bdDarkLight;
+          transition: all 0.5s linear;
   
           .content-box {
               font-size: $h5;
@@ -241,6 +252,10 @@ a {
                   font-size: $h3;
                 }
               }
+          }
+
+          &:hover {
+            border: 1px solid $bdSecondary;
           }
         }
       }
@@ -265,6 +280,8 @@ a {
         min-height: 300px;
         border-radius: 15px;
         margin-top: 35px;
+        border: 1px solid $bdDarkLight;
+        transition: all 0.5s linear;
 
         .content-box {
             font-size: $h5;
@@ -281,6 +298,10 @@ a {
             ul {
               padding-left: 15px;
             }
+        }
+
+        &:hover {
+          border: 1px solid $bdSecondary;
         }
       }
     }
@@ -307,6 +328,8 @@ a {
         min-height: 100px;
         border-radius: 15px;
         margin-top: 35px;
+        border: 1px solid $bdDarkLight;
+        transition: all 0.5s linear;
 
         .date-box {
           position: absolute;
@@ -318,8 +341,9 @@ a {
           justify-content: center;
           align-items: center;
           border-radius: 50%;
-          background: #212226;
-          border: 10px solid #16171a;
+          background: $bgSecondary;
+          border: 10px solid $bdDark;
+          transition: all 0.5s linear;
         }
 
         .content-box {
@@ -353,6 +377,14 @@ a {
             ul {
               padding-left: 15px;
             }
+        }
+
+        &:hover {
+          border: 1px solid $bdSecondary;
+
+          .date-box {
+            border: 10px solid $bdSecondary;
+          }
         }
       }
     }
@@ -393,6 +425,7 @@ a {
           border-radius: 50%;
           background: $bgSecondary;
           border: 10px solid $bdDark;
+          transition: all 0.5s linear;
 
           span {
             color: $textGrayLight;
@@ -407,6 +440,8 @@ a {
             letter-spacing: 0.8px;
             padding: 80px 30px 10px 30px;
             margin-top: 100px;
+            border: 1px solid $bdDarkLight;
+            transition: all 0.5s linear;
 
             p {
               color: $textSecondary;
@@ -419,6 +454,17 @@ a {
               font-size: $h6;
               font-weight: $fwRegular;
             }
+
+            &:hover {
+              border: 1px solid $bdSecondary;
+            }
+        }
+
+        &:hover {
+
+          .education-box {
+            border: 10px solid $bdSecondary;
+          }
         }
       }
     }

@@ -10,16 +10,13 @@ export default function AboutMe() {
                         <div className="info-content">
                             <div className="content-box p-4">
                                 <p>
-                                    Xin chào!
+                                    Welcome!
                                 </p>
                                 <p>
-                                Tôi rất đam mê với các kiến thức công nghệ mới và thường hay học hỏi, tìm hiểu để nâng cao kỹ năng của bản thân.  
+                                I am really enthusiastic about gaining new technological knowledge and always want to improve my self in this field. 
                                 </p>
                                 <p>
-                                Tính kiên nhẫn và tinh thần trách nhiệm cao sẽ giúp tôi luôn hoàn thành tốt các công việc.
-                                </p>
-                                <p>
-                                Công nghệ sẽ không ngừng phát triển và tôi sẽ không ngừng học hỏi.
+                                I believe that patience and responsibility are two main factors which can help me complete my works effectively. The more technology develops, the more I learn.
                                 </p>
                             </div>
                         </div>
@@ -39,10 +36,10 @@ export default function AboutMe() {
                                     <span>nguyendanglop93@gmail.com</span>
                                 </p>
                                 <p><span><i className="fab fa-facebook" /></span>
-                                    <a href="https://www.facebook.com/nhatdang.nguyen.319/"><span>My Facebook</span></a>
+                                    <a href="https://www.facebook.com/nhatdang.nguyen.319/" target="_blank"><span>My Facebook</span></a>
                                 </p>
                                 <p><span><i className="fab fa-github" /></span>
-                                    <a href="https://github.com/dangtdn"><span>My Github</span></a>
+                                    <a href="https://github.com/dangtdn" target="_blank"><span>My Github</span></a>
                                 </p>
                             </div>
                         </div>
