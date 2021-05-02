@@ -32,7 +32,8 @@ export default function AboutMe() {
                                 <p><span><i className="fa fa-phone" /></span>
                                     <span>0907319096</span>
                                 </p>
-                                <p><span><i className="fa fa-envelope" /></span>
+                                <p className="d-flex align-items-center about-me-email">
+                                    <span><i className="fa fa-envelope" /></span>
                                     <span>nguyendanglop93@gmail.com</span>
                                 </p>
                                 <p><span><i className="fab fa-facebook" /></span>

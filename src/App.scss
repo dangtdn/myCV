@@ -243,13 +243,18 @@ a {
               font-weight: $fwExtraLight;
               color: $textPrimary;
               letter-spacing: 0.8px;
+              overflow-y: auto;
 
-              span {
-                padding: 0px 10px;
-                font-size: $h5;
+              p {
 
-                i {
-                  font-size: $h3;
+                span {
+                  overflow-wrap: break-word;
+                  padding: 0px 10px;
+                  font-size: $h5;
+  
+                  i {
+                    font-size: $h3;
+                  }
                 }
               }
           }
